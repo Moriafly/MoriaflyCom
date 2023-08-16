@@ -2,194 +2,50 @@
 <html>
 
 <head>
-    <!-- Google AD -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7005944026631095"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <!-- 兼容移动设备显示 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
     <title>Moriafly</title>
-    <link href="https://cdn.jsdelivr.net/gh/ka215/jquery.timeline@main/dist/jquery.timeline.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/ka215/jquery.timeline@main/dist/jquery.timeline.min.js"></script>
 </head>
 
 <body>
-    <!-- <div class="header">
-
-    </div> -->
-    <script>
-        window.addEventListener('scroll', function () {
-            var header = document.querySelector('.header');
-            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-            var opacity = scrollPosition / 500; // 根据滚动位置计算透明度的值
-
-            header.style.backgroundColor = 'rgba(240, 240, 240, ' + opacity + ')';
-        });
-    </script>
-
-    <div class="bg"></div>
-
-    <div class="container">
-        <h1>MORIAFLY</h1>
-        <p>Hi, This is my personal website, you can call me <b>"Moriafly"</b> or <b>"不要糖醋放椒盐"</b>.</p>
-        <p style="margin-bottom: 40px;">Love Sakai Izumi Forever.</p>
+    <div class="titlebar">
+        <ul>
+            <li><a href="#" class="selected">首页</a></li>
+            <li><a href="#">软件</a></li>
+            <li><a href="#">帮助</a></li>
+            <li><a href="#">下载</a></li>
+        </ul>
     </div>
 
-    <div class="shell" id="shell">
-        <div class="timeline">
-            <div class="item" data-text="椒盐音乐 SaltPlayer" style="cursor: pointer;" onclick="window.open('https://moriafly.xyz/HiMoriafly/docs/salt-player/')">
-                <div class="content">
-                    <img src="https://gcore.jsdelivr.net/gh/Moriafly/MoriaflyCom@latest/res/img/ic_salt_player.png" alt="" class="img">
-                    <h2 class="content-title">2021.4.13</h2>
-                    <p class="content-desc">
-                        Melhor reprodutor de todos, não tenho o que reclamar, som, design...
-                        tudo perfeito, nunca vi um melhor do que
-                        esse, som bem nítido e dá pra curtir mesmo sem colocar o fone pra escutar bem as batidas e o que tem no
-                        fundo, simplesmente incrível ❤♓👌
-                        <br>有史以来最好的播放器，我没有什么可抱怨的，声音，设计......
-                        一切都很完美，我从未见过比这更好的，非常清晰的声音，
-                        即使不戴上耳机听节拍也可以享受它还有背景是什么，太棒了❤♓👌
-                        <br>—— 来自 Google Play 葡萄牙语用户 Herinaldo Sales
-                    </p>
-                </div>
-            </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>MORIAFLY</h2>
+            <p><b>"Moriafly"</b> or <b>"不要糖醋放椒盐"</b></p>
 
-            <div class="item" data-text="全宋词 QuanSongCi">
-                <div class="content">
-                    <img src="https://gcore.jsdelivr.net/gh/Moriafly/MoriaflyCom@latest/res/img/qmsht.webp" alt="" class="img">
-                    <h2 class="content-title">2022.6.26</h2>
-                    <p class="content-desc">
-                        https://github.com/Moriafly/QuanSongCi
-                        <br>全宋词，共收录宋词 21050 首，持续维护修订，致力成为最完整的宋词库。
-                        第一次提交（2022年6月26日）复刻自 https://github.com/chinese-poetry/chinese-poetry 全宋词，
-                        对其数据库文件进行了 json 导出为各表单一文件，方便后续直接导入数据库。
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" data-text="椒盐笔记 SaltNote">
-                <div class="content">
-                    <img src="https://gcore.jsdelivr.net/gh/Moriafly/MoriaflyCom@latest/res/img/lzumi.webp" alt="" class="img">
-                    <h2 class="content-title">2022.9.10</h2>
-                    <p class="content-desc">
-                        椒盐笔记是一款纯文本 + Markdown 的笔记软件，也可以用于便签、日记、文稿撰写等。
-                        软件在追求稳定性和流畅性、满足用户不同使用需求的同时，也注重页面设计的简约与美观，致力于为用户创造便捷舒适的使用体验。
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" data-text="Moriafly/SaltUI">
-                <div class="content">
-                    <img src="https://gcore.jsdelivr.net/gh/Moriafly/MoriaflyCom@latest/res/img/lzumi.webp" alt="" class="img">
-                    <h2 class="content-title">2023.7.9</h2>
-                    <p class="content-desc">
-                        SaltUI（UI for Salt Player） 是提取自椒盐音乐的 UI 风格组件，用以快速生成椒盐音乐风格用户界面
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" data-text="椒盐视频 SaltVideo">
-                <div class="content">
-                    <img src="https://gcore.jsdelivr.net/gh/Moriafly/MoriaflyCom@latest/res/img/lzumi.webp" alt="" class="img">
-                    <h2 class="content-title">2023.7.18</h2>
-                    <p class="content-desc">
-                        如果你停止，就是谷底。
-                    </p>
-                </div>
-            </div>
+            <h2>在哪儿找到我？</h2>
+            <p>在 Github 上关注 <a href="https://github.com/Moriafly">Moriafly</a></p>
+            <p>业务来往请通过邮箱 <a href="mailto:moriafly@163.com">moriafly@163.com</a> ~ 我会尽快与你取得联系</p>
         </div>
-    </div>
 
-    <div class="container">
-        <h1>社区</h1>
-        <p><a href="https://pd.qq.com/s/9ev310">不要糖醋放椒盐 QQ 频道</a></p>
-        <p><a href="https://t.me/saltplayerupdate">椒盐音乐 Telegram</a></p>
+        <div class="content">
+            <h1>版权</h1>
+            <p>本网站内容归本网站所有，未经允许<b>不得转载</b></a></p>
 
-        <h1>-</h1>
-        <p><i>Hold me</i></p>
-        <p><i>Love me</i></p>
-        <p><i>This is just like a dream</i></p>
-        <p><i>I'm coming cry</i></p>
-        <p><i>But I can't cry</i></p>
-        <p><i>Let me let me choose</i></p>
-        <p><i>And I hope it always grow my heart</i></p>
-        <p><i>Hold me</i></p>
-        <p><i>Love me</i></p>
-        <p><i>This is just like a dream</i></p>
-        <p><i>Can't you see...</i></p>
-        <p><i>Can't you see us?</i></p>
-        <p><i>Those far</i></p>
-        <p><i>Hold me...</i></p>
-        <p style="margin-top: 25px; margin-bottom: 45px;">- By <b>Sakai Izumi</b> 坂井泉水 -</p>
+            <h1>社区</h1>
+            <p><a href="https://pd.qq.com/s/9ev310">不要糖醋放椒盐 QQ 频道</a></p>
+            <p><a href="https://t.me/saltplayerupdate">椒盐音乐 Telegram</a></p>
 
+            <h1>相关链接</h1>
+            <p><a href="https://moriafly.xyz">椒盐音乐官方网站（旧）</a></p>
+        </div>
     </div>
 
     <div class="bottom">
         <p>Copyright © 2020-2023 Moriafly. All Rights Reserved.</p>
-
+        <p style="margin-top: 10px;">Love Sakai Izumi Forever</p>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-        (function ($) {
-            $.fn.timeline = function () {
-                var selectors = {
-                    id: $(this),
-                    item: $(this).find(".item"),
-                    activeClass: "item--active",
-                    img: ".img"
-                }
-
-                selectors.item.eq(0).addClass(selectors.activeClass);
-                selectors.id.css(
-                    "background-image",
-                    "url(" +
-                    selectors.item.first()
-                        .find(selectors.img)
-                        .attr("src") +
-                    ")"
-                );
-
-                var itemLength = selectors.item.length;
-
-                $(window).scroll(function () {
-                    var max, min;
-                    var pos = $(this).scrollTop();
-                    selectors.item.each(function (i) {
-                        min = $(this).offset().top - $(this).height() / 2;
-                        max = $(this).offset().top + $(this).height() / 2 ;
-                        var that = $(this);
-
-                        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
-                            selectors.item.removeClass(selectors.activeClass);
-                            selectors.id.css(
-                                "background-image",
-                                "url(" +
-                                selectors.item.last()
-                                    .find(selectors.img)
-                                    .attr("src") +
-                                ")"
-                            );
-                            selectors.item.last().addClass(selectors.activeClass);
-                        } else if (pos >= min && pos <= max - 10) {
-                            selectors.id.css(
-                                "background-image",
-                                "url(" +
-                                $(this)
-                                    .find(selectors.img)
-                                    .attr("src") +
-                                ")"
-                            );
-                            selectors.item.removeClass(selectors.activeClass);
-                            $(this).addClass(selectors.activeClass);
-                        }
-                    });
-                });
-            };
-        })(jQuery)
-
-        $("#shell").timeline();
-    </script>
 </body>
 
 </html>
