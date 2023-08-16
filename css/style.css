@@ -39,15 +39,14 @@ body {
 .titlebar li a {
     display: block;
     text-decoration: none;
-    font-weight: 100;
     padding: 32px 20px 0px 20px;
-    color: #ededed;
+    color: #e4e4e4;
 }
 
 .titlebar li a.selected {
     display: block;
     text-decoration: none;
-    font-weight: 900;
+    -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));
     color: #ffffff;
 }
 
@@ -140,4 +139,14 @@ a:link {
 
 a:visited {
     color: rgb(17, 112, 255);
+}
+
+code {
+    color: rgb(0, 137, 59);
+    background-color: rgb(240, 240, 240);
+    font-size: 1em;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

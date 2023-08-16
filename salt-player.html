@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 兼容移动设备显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Moriafly</title>
+</head>
+
+<body>
+    <div class="titlebar">
+        <ul>
+            <li><a href="index.html">MORIAFLY</a></li>
+            <li><a href="salt-player.html" class="selected">椒盐音乐</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>大事记</h2>
+            <p>2021/4/23 - 椒盐音乐发布第一个版本</p>
+        </div>
+
+        <div class="content">
+            <h1>椒盐音乐</h1>
+            <p>数十万用户选择的 Android 本地音乐播放器</p>
+            <p>架构：arm-v8a（64 位） / 系统要求：Android 6.0 及以上版本</p>
+
+            <h1>下载</h1>
+            <p>请在正确的渠道下载本应用，请勿使用他人重新签名的安装文件</p>
+            <p><a href="https://www.coolapk.com/apk/284064">酷安下载（Moriafly 渠道）</a></p>
+            <p><a href="https://github.com/Moriafly/SaltPlayerSource/releases">Github 下载（Moriafly / Hmos 渠道）</a></p>
+            <p><a href="https://play.google.com/store/apps/details?id=com.salt.music">谷歌商店下载（Play 渠道）</a></p>
+
+            <h1>问题帮助 FQA</h1>
+            <p><b>Q：HQ、SQ 和 Hi-Res 标识是什么意思？</b></p>
+            <p style="margin-left: 30px;">HQ 表示高品质音乐，通常指比特率大于等于 320 kbps 的音频；SQ 表示超高品质音乐；Hi-Res 表示高解析度音频，通常指高于 CD 格式（采样率 44.1位 / 位深 16 bit）的音频。常见可达到高解析的音频格式：FLAC / DSD (DFF / DSF) / WAV / AIFF</p>
+        
+            <p><b>Q：此设备不支持均衡器是什么意思？</b></p>
+            <p style="margin-left: 30px;">椒盐音乐会调用系统均衡器，此定制系统可能不含有内置均衡器应用</p>
+
+            <p><b>Q：无歌曲封面或者歌曲显示的封面不是内嵌封面？</b></p>
+            <p style="margin-left: 30px;">尝试使用其他音乐编辑软件更改添加封面图片。歌曲封面按照专辑封面显示，若歌曲专辑一致（专辑名相同且专辑艺术家相同），则会显示相同的封面。可以尝试在应用设置中开启忽略媒体库存储</p>
+        
+            <p><b>Q：没有音乐通知栏？</b></p>
+            <p style="margin-left: 30px;">进入系统设置查看是否允许椒盐音乐通知，椒盐音乐的通知类别为 Salt Music Notification （已知 ColorOS 机型可能会默认关闭，需手动开启）</p>
+        
+            <p><b>Q：打开 QQ 后椒盐音乐被暂停？</b></p>
+            <p style="margin-left: 30px;">此为 QQ 的短视频小世界不正常请求音频焦点（用户不使用的时候也请求），暂时有两个方法解决：1. 关闭 QQ 的短视频功能；2. 关闭椒盐音乐的音频焦点功能</p>
+        
+            <p><b>Q：微信等来信息打断音乐播放但未继续播放？</b></p>
+            <p style="margin-left: 30px;">检查是否使用了 AAudio 输出模式，此为已知问题</p>
+
+            <h1>特定系统相关</h1>
+            <h2>小米 MIUI</h2>
+            <p><b>小米妙播：</b>一般需要 MIUI 12 以上版本，点击椒盐音乐播放界面右上角按钮自动跳转，若无法开启等出现异常情况，请检查是否禁用了相关系统组件服务或向 MIUI 反馈</p>
+            <p><b>MIUI 小部件：</b>此需要上架小米应用商店，暂无法做到</p>
+        
+            <h2>华为鸿蒙</h2>
+            <p><b>音乐控制中心：</b>华为通过白名单（一个记录了支持软件包名和版本号的 XML 文件）的控制</p>
+
+            <h2>vivo OriginOS / Funtouch OS</h2>
+            <p><b>Hi-Fi 模式：</b>部分 vivo 的设备支持高达 384 kHz 的音频输出，若支持列表不含椒盐音乐，你可以通过 adb 的方式添加对椒盐音乐的支持，输入 <code>settings put global game_support_hifi_list com.salt.music</code></p>
+
+            <h2>OPPO ColorOS</h2>
+            <p><b>音乐通知：</b>一般会默认屏蔽椒盐音乐的通知权限，需要手动授予椒盐音乐通知权限</p>
+
+            <h2>魅族 Flyme</h2>
+            <p><b>OpenSL ES：</b>部分设备（多见于 16 系列）使用 OpenSL ES 输出可能会异常暂停</p>
+            
+        </div>
+    </div>
+
+    <div class="bottom">
+        <p>Copyright © 2020-2023 Moriafly. All Rights Reserved.</p>
+        <p style="margin-top: 10px;">Love Sakai Izumi Forever</p>
+    </div>
+
+</body>
+
+</html>
