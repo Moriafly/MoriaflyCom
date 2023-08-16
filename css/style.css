@@ -113,6 +113,14 @@ body {
     white-space: pre-wrap;
 }
 
+.container li {
+    margin-left: 4px;
+    margin-top: 10px;
+    line-height: 2em;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
 .bottom {
     width: 100%;
     background-color: rgb(240, 240, 240);
