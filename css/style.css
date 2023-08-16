@@ -133,6 +133,10 @@ a {
     text-decoration: none;
 }
 
+a:active {
+    outline: none;
+}
+
 a:link {
     color: rgb(17, 112, 255);
 }
