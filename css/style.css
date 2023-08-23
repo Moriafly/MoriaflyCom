@@ -13,7 +13,7 @@ body {
 .titlebar {
     height: 80px;
     width: 100vw;
-    background-color: rgb(88, 195, 224);
+    background-color: rgb(85, 195, 225);
     float: top;
     display: flex;
 }
@@ -47,18 +47,32 @@ body {
 .titlebar li a.selected {
     display: block;
     text-decoration: none;
-    -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.5));
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(transparent, transparent 50%, rgba(255, 255, 255, .5));
     color: #ffffff;
 }
 
 .sidebar {
-    width: 20%;
-    padding: 32px 20px 20px 20px;
+    width: 30%;
+    padding: 32px 10px 20px 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .sidebar {
+        width: 20%;
+        padding: 32px 20px 20px 20px;
+    }
 }
 
 .content {
     width: 80%;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .content {
+        width: 80%;
+        padding: 20px 20px 20px 40px;
+    }
 }
 
 .header {
@@ -161,5 +175,39 @@ code {
     padding: 4px 6px;
     border-radius: 4px;
     font-weight: 700;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 侧栏媒体链接项目 */
+.sidebar .link-item {
+    margin: 10px 0 10px 0;
+}
+
+@media screen and (min-width: 850px) {
+    .sidebar .link-item {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.sidebar .link-item:hover {
+    cursor: pointer;
+}
+
+.sidebar .link-item img {
+    width: 28px;
+    height: 28px;
+}
+
+.sidebar .link-item p {
+    margin: 0;
+    color: rgb(17, 112, 255);
+    line-height: 1.4em;
+}
+
+@media screen and (min-width: 850px) {
+    .sidebar .link-item p {
+        margin: 0 0 0 4px;
+        color: rgb(17, 112, 255);
+    }
 }
