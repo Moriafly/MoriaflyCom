@@ -7,12 +7,13 @@ body {
     margin: 0;
     background-color: white;
     font-family: "Times New Roman", Times, serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .titlebar {
     height: 80px;
     width: 100vw;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(88, 195, 224);
     float: top;
     display: flex;
 }
@@ -40,13 +41,13 @@ body {
     display: block;
     text-decoration: none;
     padding: 32px 20px 0px 20px;
-    color: #e4e4e4;
+    color: #ffffffc1;
 }
 
 .titlebar li a.selected {
     display: block;
     text-decoration: none;
-    -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));
+    -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.5));
     color: #ffffff;
 }
 
@@ -131,7 +132,7 @@ body {
 
 .bottom p {
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     font-size: 1em;
     color: rgb(80, 80, 80);
 }
