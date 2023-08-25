@@ -130,10 +130,6 @@ body {
     white-space: pre-wrap;
 }
 
-.container .content p {
-    padding-right: 20px;
-}
-
 .container li {
     margin-left: 4px;
     margin-top: 10px;
@@ -266,7 +262,6 @@ code {
     background-color: #fafafa;
     transition: transform 0.3s ease;
     box-sizing: border-box;
-    margin-right: 20px;
     padding: 15px 20px;
 }
 
