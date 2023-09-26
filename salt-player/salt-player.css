@@ -144,6 +144,12 @@ p {
     color: #444444;
 }
 
+.bottombar .sup p {
+    font-size: 0.9em;
+    margin: 8px 0;
+    color: #7a7a7a;
+}
+
 .bottombar a {
     color: #444444;
     text-decoration: none;
