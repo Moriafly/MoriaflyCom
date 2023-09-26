@@ -1,0 +1,182 @@
+body {
+    margin: 0px;
+}
+
+p {
+    word-break: normal;
+}
+
+.titlebar {
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+}
+
+.titlebar a {
+    font-size: 0.9em;
+    color: #444444;
+    text-decoration: none;
+}
+
+.titlebar .content {
+    margin: 0 auto;
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-left));
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.titlebar .content img {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: 12px;
+    left: 0px;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+}
+
+.titlebar .list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+.titlebar li {
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+    height: 56px;
+}
+
+.titlebar li:first-child {
+    margin-left: 0;
+}
+
+.container {
+    padding: 28px 0;
+}
+
+.container .content {
+    margin: 0 auto;
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-left));
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 150px 0 50px 0;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.container p {
+    text-align: center;
+    color: #444444;
+    line-height: 1.75em;
+}
+
+.container a {
+    color: #155fff;
+    text-decoration: none;
+}
+
+.container a:link {
+    color: #155fff;
+}
+
+.container a:visited {
+    color: #155fff;
+}
+
+.container ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+.container ul li {
+    display: inline-block;
+    width: 120px;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.container ul li p:nth-child(2){
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.container ul li p:nth-child(3){
+    font-size: 1em;
+    margin: 0;
+    color: #777777;
+    line-height: 1.5em;
+}
+
+
+/* 底部 */
+
+.bottombar {
+    background-color: #f5f5f5;
+    padding: 28px 0;
+}
+
+.bottombar .content {
+    margin: 0 auto;
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-left));
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1024px;
+    font-size: 0.9em;
+    color: #444444;
+}
+
+.bottombar a {
+    color: #444444;
+    text-decoration: none;
+}
+
+.bottombar a:link {
+    color: #444444;
+}
+
+.bottombar a:visited {
+    color: #444444;
+}
+
+/* 各个 */
+.dark-image {
+    background-position: center center;
+    max-width: 2560px;
+    color: #fff;
+    padding: 10px 0 120px 0;
+    margin: 150px auto 0 auto;
+}
+
+.dark-image p {
+    color: #fff;
+}
+
+.dark-image ul li p:nth-child(3){
+    color: #ececec;
+}
+
+.light-image {
+    background-position: center center;
+    max-width: 2560px;
+    padding: 10px 0 120px 0;
+    margin: 150px auto 0 auto;
+}
