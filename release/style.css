@@ -1,0 +1,13 @@
+body {
+    padding: 20px;
+}
+
+th {
+    padding: 4px 20px;
+    text-align: left;
+}
+
+td {
+    padding: 4px 20px;
+    text-align: left;
+}
