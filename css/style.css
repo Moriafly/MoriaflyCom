@@ -57,6 +57,7 @@ body {
     padding-top: 12px;
     padding-bottom: 25px;
     margin-right: 20px;
+    position: fixed;
 }
 
 @media screen and (min-width: 500px) {
@@ -67,12 +68,14 @@ body {
 
 .content {
     width: 70%;
+    margin-left: 30%;
     padding-bottom: 25px;
 }
 
 @media screen and (min-width: 500px) {
     .content {
         width: 80%;
+        margin-left: 20%;
     }
 }
 
@@ -153,6 +156,14 @@ body {
     color: rgb(80, 80, 80);
 }
 
+.bottom .small {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 0.75em;
+    color: rgb(80, 80, 80);
+    line-height: 1.25em;
+}
+
 a {
     color: rgb(17, 112, 255);
     text-decoration: none;
@@ -204,6 +215,12 @@ code {
 .sidebar .link-item p {
     margin: 0;
     color: rgb(17, 112, 255);
+    line-height: 1.4em;
+}
+
+.sidebar a {
+    margin: 0;
+    color: #333;
     line-height: 1.4em;
 }
 
