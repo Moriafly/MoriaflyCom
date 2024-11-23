@@ -44,6 +44,20 @@
  * -------------------------------------------------------------------------- */
 
 :root {
+  --vp-c-bg: #f6f6f7;
+  --vp-c-bg-alt: #f6f6f7;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #ffffff;
+}
+
+.dark {
+  --vp-c-bg: #1b1b1f;
+  --vp-c-bg-alt: #161618;
+  --vp-c-bg-elv: #202127;
+  --vp-c-bg-soft: #202127;
+}
+
+:root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
@@ -137,3 +151,6 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+.VPLink.no-icon.VPFeature {
+  border-radius: 20px;
+}
