@@ -17,7 +17,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '本网站相关内容未经允许不得转载 <br> Google/Android 是 Google LLC 的注册商标，Salt Player 和糖醋音乐均是寻浔科技（上海）有限公司在中华人民共和国的注册商标',
+      message: 'Google/Android 是 Google LLC 的注册商标，Salt Player 和糖醋音乐均是寻浔科技（上海）有限公司在中华人民共和国的注册商标',
       copyright: 'Copyright © 2020-2024 Moriafly. All Rights Reserved.'
     },
 
