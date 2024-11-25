@@ -14,6 +14,11 @@ hero:
 
 features:
   - icon: 
+      src: /ssr.png
+    title: <img src="https://img.shields.io/badge/新品-green"> 椒盐工具箱
+    details: OpenMrw 测试
+    link: /program/ssr
+  - icon: 
       src: /yujian.png
     title: 遇荐（微信公众号）
     details: 在生活中总会遇到一些惊喜，汇集万千，我们把更好的推荐给你，微信公众号搜索“遇荐”
