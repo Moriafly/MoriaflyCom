@@ -1,4 +1,13 @@
-# 椒盐工具箱
+---
+layout: home
+
+hero:
+  name: 椒盐工具箱 SSR
+  text: 为生活加点盐<br>期待它有什么新功能呢
+  tagline: （开发中）适用于 Android 平台
+  image:
+   src: /ssr.png
+---
 
 ## 更新日志
 

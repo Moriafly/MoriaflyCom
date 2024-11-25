@@ -76,7 +76,7 @@ features:
       src: /github.png
     title: OpenMrw
     details: <img src="https://img.shields.io/github/stars/xuncorp/openmrw"> OpenMrw (Open Metadata Reader Writer), a tool library for the JVM platform
-    link: https://github.com/xuncorp/openmrw
+    link: /program/openmrw
   - icon: 
       src: /github.png
     title: Salt UI
