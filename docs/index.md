@@ -14,10 +14,10 @@ hero:
 
 features:
   - icon: 
-      src: /ssr.png
+      src: /salt-toolbox.png
     title: <img src="https://img.shields.io/badge/新品-green"> 椒盐工具箱
     details: OpenMrw 测试
-    link: /program/ssr
+    link: /program/salt-toolbox
   - icon: 
       src: /yujian.png
     title: 遇荐（微信公众号）
