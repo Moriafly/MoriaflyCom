@@ -75,7 +75,7 @@ features:
   - icon: 
       src: /github.png
     title: OpenMrw
-    details: <img src="https://img.shields.io/github/stars/xuncorp/openmrw"> OpenMrw (Open Metadata Reader Writer), a tool library for the JVM platform
+    details: <img src="https://img.shields.io/github/stars/xuncorp/openmrw"> 椒盐自研新一代元数据读取写入器
     link: /program/openmrw
   - icon: 
       src: /github.png
