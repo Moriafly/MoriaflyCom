@@ -45,14 +45,14 @@
 
 :root {
   --vp-c-bg: #f6f6f7;
-  --vp-c-bg-alt: #f6f6f7;
+  --vp-c-bg-alt: #f1f1f1;
   --vp-c-bg-elv: #ffffff;
   --vp-c-bg-soft: #ffffff;
 }
 
 .dark {
-  --vp-c-bg: #1b1b1f;
-  --vp-c-bg-alt: #161618;
+  --vp-c-bg: #161618;
+  --vp-c-bg-alt: #1b1b1f;
   --vp-c-bg-elv: #202127;
   --vp-c-bg-soft: #202127;
 }
