@@ -22,7 +22,7 @@ hero:
 
 ## 热力调音 SALT FX V4+
 
-内置 SALT PLAYER V4 AUDIOFX 音频效果，提供内置耳机适配参数、MAX Audio 声学调音、V3 混响设置。
+内置 SALT PLAYER V4 AUDIOFX 音频效果，提供内置耳机适配参数、[MAX Audio](/program/maxaudio) 声学调音、V3 混响设置。
 
 多年的音频开发技术，与著名音频提供商合作，为用户带来优质的音频技术提供。
 

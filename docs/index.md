@@ -11,6 +11,9 @@ hero:
     - theme: alt
       text: 赞助开发
       link: /about/sponsor
+    - theme: alt
+      text: 标准文档
+      link: /standards/README
 
 features:
   - icon: 
