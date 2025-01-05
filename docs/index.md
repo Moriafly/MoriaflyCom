@@ -99,5 +99,5 @@ features:
       src: /github.png
     title: <img src="https://img.shields.io/badge/停止维护-orange"> Dso Music
     details: <img src="https://img.shields.io/github/stars/Moriafly/DsoMusic"> Kotlin 开发的美观 Android 音乐软件
-    link: https://github.com/Moriafly/QuanSongCi
+    link: https://github.com/Moriafly/DsoMusic
 ---
