@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Moriafly",
-  description: "Moriafly Official",
+  title: "不要糖醋放椒盐（椒盐音乐官网）",
+  description: "Moriafly Official | 不要糖醋放椒盐 | 椒盐音乐",
   base: '/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
