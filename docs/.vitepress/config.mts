@@ -3,12 +3,12 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "不要糖醋放椒盐（椒盐音乐官网）",
-  description: "Moriafly Official | 不要糖醋放椒盐 | 椒盐音乐",
+  description: "Moriafly Official | 不要糖醋放椒盐 | 椒盐音乐 | Salt Player",
   base: '/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      // { text: '首页', link: '/' }
+      { text: '首页', link: '/' }
     ],
 
     socialLinks: [

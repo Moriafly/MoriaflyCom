@@ -35,7 +35,7 @@ features:
       src: /spa.png
     title: SPW
     details: 预计 2025 年发售
-    link: https://spw.moriafly.com
+    link: /program/spw/spw
   - icon: 
       src: /qinalt.png
     title: 青盐云听
