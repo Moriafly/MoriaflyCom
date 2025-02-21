@@ -80,9 +80,9 @@
 
 ## 1.0.862 2024/12/10
 
-- 重复点击启动应用将不再启动软件新进程而是将已经存在的进程主窗体显示在最前，[#1085](https://github.com/Moriafly/SaltPlayerSource/issues/1085)，详见[启动行为](/features/launch-behavior)
+- 重复点击启动应用将不再启动软件新进程而是将已经存在的进程主窗体显示在最前，[#1085](https://github.com/Moriafly/SaltPlayerSource/issues/1085)
 - 新增歌曲升序降序排序功能
-- 新增垂直同步设置功能，详见[外观 -> 垂直同步](/settings/appearance#垂直同步)
+- 新增垂直同步设置功能
 - 移除迷你播放条的翻转动画
 - 音量控制面板背景丢失，[#1070](https://github.com/Moriafly/SaltPlayerSource/issues/1070)
 - 当未载入歌曲的时候播放界面背景全透明，[#1079](https://github.com/Moriafly/SaltPlayerSource/issues/1079)
@@ -114,7 +114,7 @@
 
 ## 1.0.785 2024/12/02
 
-- 提供了【DXGI 兼容模式】选项，可辅助解决部分情况下在 Windows 11 上亚克力和云母窗体样式丢失的问题，详情访问 [DXGI 兼容模式](/settings/dxgi-compat-mode)
+- 提供了【DXGI 兼容模式】选项，可辅助解决部分情况下在 Windows 11 上亚克力和云母窗体样式丢失的问题
 - 优化软件安全性
 - 优化性能表现
 - 优化部分界面细节
