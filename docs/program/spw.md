@@ -15,7 +15,7 @@ hero:
       link: /program/spw/changelog
     - theme: alt
       text: 支持文档
-      link: /program/spw/doc/doc
+      link: /program/spw/doc
 
 features:
   - title: 全新软件开发
