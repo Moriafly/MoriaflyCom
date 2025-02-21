@@ -11,6 +11,9 @@ hero:
       text: 加入 Steam 愿望单
       link: https://store.steampowered.com/app/3009140/Salt_Player_for_Windows/
     - theme: alt
+      text: 加入测试
+      link: /program/spw/join-dev
+    - theme: alt
       text: 更新日志
       link: /program/spw/changelog
     - theme: alt
