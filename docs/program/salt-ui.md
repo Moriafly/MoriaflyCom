@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "SPW"
+  name: "Salt UI"
   text: "Salt Player®\nfor Windows™"
   tagline: 数十万用户选择的本地音乐播放器品牌
   actions:
@@ -17,8 +17,8 @@ hero:
       text: 更新日志
       link: /program/spw/changelog
     - theme: alt
-      text: 文档
-      link: /program/spw/doc/install
+      text: 支持文档
+      link: /program/spw/doc
 
 features:
   - title: 全新软件开发
