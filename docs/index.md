@@ -84,7 +84,7 @@ features:
       src: /github.png
     title: Salt UI
     details: <img src="https://img.shields.io/github/stars/Moriafly/SaltUI"> UI Components for Compose Multiplatform (Android/Desktop/iOS)
-    link: https://github.com/Moriafly/SaltUI
+    link: /program/salt-ui
   - icon: 
       src: /github.png
     title: QuanSongCi
