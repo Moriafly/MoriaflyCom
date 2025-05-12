@@ -38,7 +38,13 @@ export default defineConfig({
                 },
                 { text: '无间隙播放', link: '/program/spw/doc/gapless-playback' },
                 { text: '常见问题 FAQ', link: '/program/spw/doc/faq' },
-                { text: '法律信息', link: '/program/spw/doc/legal-information' },
+                {
+                  text: '法律信息',
+                  link: '/program/spw/doc/legal-information',
+                  items: [
+                    { text: '隐私协议', link: '/program/spw/doc/privacy_policy' }
+                  ]
+                },
               ]
             },
           ]

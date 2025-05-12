@@ -33,8 +33,8 @@ features:
     link: /program/salt-player
   - icon: 
       src: /spa.png
-    title: SPW
-    details: 预计 2025 年发售
+    title: Salt Player for Windows
+    details: 椒盐音乐 PC 版，预计 2025 年发售
     link: /program/spw
   - icon: 
       src: /qinalt.png
