@@ -23,3 +23,9 @@
 下载微软官方的 MSI 安装包修复程序：
 
 - https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d
+
+## 安装报错“Error writing to file: xxx. Verify that you have access to that directory.”
+
+![安装报错](error_writing_to_file.jpg)
+
+权限问题，确保授予 UAC 权限，另外检查是否有第三方安全软件（可尝试关闭某些安全软件并重试安装）阻止了安装包写入安装目录。
