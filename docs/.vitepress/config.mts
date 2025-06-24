@@ -36,6 +36,7 @@ export default defineConfig({
                     { text: 'DXGI 兼容模式', link: '/program/spw/doc/dxgi-compat-mode' },
                   ]
                 },
+                { text: 'SPW 音频引擎', link: '/program/spw/doc/audio-engine' },
                 { text: '无间隙播放', link: '/program/spw/doc/gapless-playback' },
                 { text: '常见问题 FAQ', link: '/program/spw/doc/faq' },
                 {
