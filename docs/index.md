@@ -17,6 +17,11 @@ hero:
 
 features:
   - icon: 
+      src: /spa.png
+    title: Salt Player for Windows
+    details: 椒盐音乐 PC 版
+    link: /program/spw
+  - icon: 
       src: /salt-toolbox.png
     title: <img src="https://img.shields.io/badge/新品-green"> 椒盐工具箱
     details: OpenMrw 测试
@@ -31,11 +36,6 @@ features:
     title: 椒盐音乐 Salt Player
     details: 数十万用户选择的本地音乐播放器，现已登录谷歌、OPPO、小米、华为、荣耀等多家应用商店
     link: /program/salt-player
-  - icon: 
-      src: /spa.png
-    title: Salt Player for Windows
-    details: 椒盐音乐 PC 版，预计 2025 年发售
-    link: /program/spw
   - icon: 
       src: /qinalt.png
     title: 青盐云听
