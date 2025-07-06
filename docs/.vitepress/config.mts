@@ -66,5 +66,14 @@ export default defineConfig({
 
     darkModeSwitchLabel: '主题模式',
     returnToTopLabel: '返回顶部'
+  },
+  markdown: {
+    container: {
+      tipLabel: '提示',
+      warningLabel: '警告',
+      dangerLabel: '危险',
+      infoLabel: '信息',
+      detailsLabel: '详细信息'
+    }
   }
 })
