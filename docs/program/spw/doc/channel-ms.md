@@ -1,5 +1,7 @@
 # Microsoft Store 渠道版本
 
+[下载](https://apps.microsoft.com/detail/9P42FQ0WPQXK)
+
 SPW 在 Microsoft Store 渠道中属于 MSIX 包应用。
 
 ## 安装位置
