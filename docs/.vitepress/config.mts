@@ -25,6 +25,12 @@ export default defineConfig({
             {
               text: '文档',
               items: [
+                {
+                  text: '渠道',
+                  items: [
+                    { text: 'Microsoft Store', link: '/program/spw/doc/channel-ms' },
+                  ]
+                },
                 { text: '安装', link: '/program/spw/doc/install' },
                 { text: '启动行为', link: '/program/spw/doc/launch-behavior' },
                 { text: '音乐库', link: '/program/spw/doc/music-library' },

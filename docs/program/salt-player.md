@@ -6,7 +6,7 @@ hero:
   text: 数十万用户选择的本地音乐播放器
   tagline: 适用于 Android 平台
   image:
-   src: /spa.png
+    src: /spa.png
 ---
 
 > 这是最好的播放器，我无可抱怨，音质、设计...一切都完美，我从未见过比这更好的，声音非常清晰，甚至不用戴耳机也能欣赏到节奏和背景音乐，简直令人难以置信 ❤♓👌
@@ -14,7 +14,7 @@ hero:
 —— 来自 Google Play 葡萄牙语用户 Herinaldo Sales
 
 - 下载
-  - Officail 渠道（境内用户推荐）：OPPO（一加、realme）、荣耀、小米和华为用户可在对应的应用商店下载，搜索“Salt Player”。 
+  - Official 渠道（境内用户推荐）：OPPO（一加、realme）、荣耀、小米和华为用户可在对应的应用商店下载，搜索“Salt Player”。 
   - Google Play 渠道（境外用户推荐）：[Play 商店](https://play.google.com/store/apps/details?id=com.salt.music)
   - Moriafly 渠道：[酷安](https://www.coolapk.com/apk/com.salt.music)
 
