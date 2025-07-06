@@ -13,7 +13,7 @@ features:
   - icon:
       src: /microsoft-store.svg
     title: 从 Microsoft Store 下载
-    details: MSXI 包软件，Windows 上的无缝体验
+    details: MSIX 包软件，Windows 上的无缝体验
     link: /program/spw/doc/channel-ms
   - icon:
       src: /ic-steam.png
