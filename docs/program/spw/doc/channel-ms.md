@@ -1,10 +1,12 @@
 # Microsoft Store 渠道版本
 
+SPW 可通过 [Microsoft Store](https://apps.microsoft.com/detail/9P42FQ0WPQXK) 获取：
+
 <a href="https://apps.microsoft.com/detail/9p42fq0wpqxk?referrer=appbadge&mode=direct">
 	<img src="https://get.microsoft.com/images/zh-cn%20light.svg" width="200"/>
 </a>
 
-SPW 可通过 [Microsoft Store](https://apps.microsoft.com/detail/9P42FQ0WPQXK) 获取。此版本作为 MSIX 包提供，其安装与更新由 Microsoft Store 直接管理。
+此版本作为 MSIX 包提供，其安装与更新由 Microsoft Store 直接管理。
 
 ## 管理安装位置
 

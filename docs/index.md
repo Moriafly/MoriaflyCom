@@ -52,6 +52,11 @@ features:
     details: 椒盐笔记是一款纯文本 + Markdown 的笔记软件，也可以用于便签、日记、文稿撰写等
     link: https://moriafly.xyz/HiMoriafly/docs/salt-note/
   - icon: 
+      src: /hearusy-spectrum.png
+    title: Hearusy Spectrum
+    details: 音频语谱图查看软件
+    link: /program/hearusy-spectrum
+  - icon: 
       src: /salt-about.png
     title: Salt About
     details: Android/Windows CPU 等信息查看
@@ -60,11 +65,6 @@ features:
       src: /moriafly-audio-hub.png
     title: <img src="https://img.shields.io/badge/停止维护-orange"> Moriafly Audio Hub
     details: Moriafly 的音频中心
-  - icon: 
-      src: /hearusy-spectrum.png
-    title: <img src="https://img.shields.io/badge/停止维护-orange"> Hearusy Spectrum
-    details: 音频语谱图查看软件
-    link: https://moriafly.xyz/HiMoriafly/docs/hearusy-spectrum/
   - icon: 
       src: /salt-video.png
     title: <img src="https://img.shields.io/badge/开源-blue"> <img src="https://img.shields.io/badge/停止维护-orange"> 椒盐视频 Salt Video
