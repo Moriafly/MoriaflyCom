@@ -77,6 +77,16 @@ features:
     link: https://github.com/Moriafly/SaltPlayerSource
   - icon: 
       src: /github.png
+    title: Salt Audio Tag
+    details: <img src="https://img.shields.io/github/stars/Moriafly/SaltAudioTag"> Salt Audio Tag aims to be a cross-platform audio tag editor for Android, iOS, Windows, Linux, and macOS
+    link: https://github.com/Moriafly/SaltAudioTag
+  - icon: 
+      src: /github.png
+    title: Media Kit
+    details: <img src="https://img.shields.io/github/stars/Moriafly/media-kit"> Salt Player for Android media services, notification management foundation, including detailed handling of various OEM systems
+    link: https://github.com/Moriafly/media-kit
+  - icon: 
+      src: /github.png
     title: OpenMrw
     details: <img src="https://img.shields.io/github/stars/xuncorp/openmrw"> 椒盐自研新一代元数据读取写入器
     link: /program/openmrw

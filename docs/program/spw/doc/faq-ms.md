@@ -1,0 +1,1 @@
+# FAQ（Microsoft Store 渠道）

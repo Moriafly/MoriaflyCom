@@ -26,7 +26,7 @@ SPW 的安装位置由 Windows 系统设置决定。如果希望更改新应用�
 如需申请退款，请联系 Microsoft 支持：
 
 1.  访问 [Microsoft 支持页面](https://support.microsoft.com/home/contact?linkquery=Cancel%20a%20subscription)
-2.  选择“联系支持人员”。
+2.  选择“联系支持人员”
 3.  在“产品与服务”下选择“其他产品”，在“类别”下选择“取消我的订阅”，然后点击“确认”
 4.  根据页面提示联系 Microsoft 支持人员，并向他们提供订单信息和退款原因
 

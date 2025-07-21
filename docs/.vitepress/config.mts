@@ -44,7 +44,14 @@ export default defineConfig({
                 },
                 { text: 'SPW 音频引擎', link: '/program/spw/doc/audio-engine' },
                 { text: '无间隙播放', link: '/program/spw/doc/gapless-playback' },
-                { text: '常见问题 FAQ', link: '/program/spw/doc/faq' },
+                {
+                  text: '常见问题 FAQ',
+                  items: [
+                    { text: 'FAQ（Microsoft Store）', link: '/program/spw/doc/faq-ms' },
+                    { text: 'FAQ（Steam）', link: '/program/spw/doc/faq-steam' },
+                    { text: 'FAQ（Legacy）', link: '/program/spw/doc/faq-legacy' },
+                  ]
+                },
                 {
                   text: '法律信息',
                   link: '/program/spw/doc/legal-information',
