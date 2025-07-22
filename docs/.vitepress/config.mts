@@ -53,6 +53,12 @@ export default defineConfig({
                   ]
                 },
                 {
+                  text: '第三方 App',
+                  items: [
+                    { text: '音乐标签', link: '/program/spw/doc/app-music-tag' },
+                  ]
+                },
+                {
                   text: '法律信息',
                   link: '/program/spw/doc/legal-information',
                   items: [
