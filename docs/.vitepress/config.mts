@@ -44,6 +44,7 @@ export default defineConfig({
                 },
                 { text: 'SPW 音频引擎', link: '/program/spw/doc/audio-engine' },
                 { text: '无间隙播放', link: '/program/spw/doc/gapless-playback' },
+                { text: '创意工坊', link: '/program/spw/doc/workshop' },
                 {
                   text: '常见问题 FAQ',
                   items: [
