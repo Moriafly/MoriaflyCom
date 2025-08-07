@@ -17,13 +17,13 @@ features:
     link: /program/spw/doc/channel-ms
   - icon:
       src: /ic-steam.png
-    title: 加入 Steam 愿望单
-    details: 尽快发布
-    link: https://store.steampowered.com/app/3009140/Salt_Player_for_Windows
+    title: 从 Steam 下载
+    details: 将 SPW 加入您的 Steam 库中
+    link: /program/spw/doc/channel-steam
   - icon:
       src: /ic-update.png
     title: 更新日志
-    details: 2025 年 7 月 8 日发布 1.4.13 版本
+    details: 2025 年 7 月 30 日发布 1.5.10 版本
     link: /program/spw/changelog
   - icon:
       src: /ic-document.png

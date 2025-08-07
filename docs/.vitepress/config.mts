@@ -20,7 +20,7 @@ export default defineConfig({
         {
           text: 'SPW',
           items: [
-            { text: '加入测试', link: '/program/spw/join-dev' },
+            // { text: '加入测试', link: '/program/spw/join-dev' },
             { text: '更新日志', link: '/program/spw/changelog' },
             {
               text: '文档',
@@ -29,6 +29,7 @@ export default defineConfig({
                   text: '渠道',
                   items: [
                     { text: 'Microsoft Store', link: '/program/spw/doc/channel-ms' },
+                    { text: 'Steam', link: '/program/spw/doc/channel-steam' },
                   ]
                 },
                 { text: '安装', link: '/program/spw/doc/install' },
@@ -48,6 +49,7 @@ export default defineConfig({
                 {
                   text: '常见问题 FAQ',
                   items: [
+                    { text: 'FAQ（多渠道通用）', link: '/program/spw/doc/faq-common' },
                     { text: 'FAQ（Microsoft Store）', link: '/program/spw/doc/faq-ms' },
                     { text: 'FAQ（Steam）', link: '/program/spw/doc/faq-steam' },
                     { text: 'FAQ（Legacy）', link: '/program/spw/doc/faq-legacy' },
