@@ -1,30 +1,30 @@
 # Salt UI
 
-Light, simple, and user-friendly.
+清新、简单、用户友好。
 
-## Introduction
+## 简介
 
-Salt UI is UI components based on [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform). The 1.0 version is derived from some UI components of [Salt Player](https://github.com/Moriafly/SaltPlayerSource). Currently, Salt UI is used in Salt Player, Emo Scroll, Qinalt and other App to serve hundreds of thousands of users.
+Salt UI 是基于 [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform) 的 UI 组件，于 2023 年 8 月开源。1.0 版本派生自 Salt Player 的一些 UI 组件。目前，Salt UI 已在 Salt Player、Emo Scroll、Qinalt 等 App 中使用，服务超百万用户。
 
-## Compatibility
+## 兼容性
 
-See [Compatibility](https://github.com/Moriafly/SaltUI?tab=readme-ov-file#compatibility).
+[Compatibility](https://github.com/Moriafly/SaltUI?tab=readme-ov-file#compatibility)
 
-## Get started
+## 开始使用
 
-Salt UI is now available on Maven Central. Click the badge below to visit its distribution page, which displays the latest release version.
+Salt UI 现已在 Maven Central 上提供。单击下面的徽章以访问其分发页面，其中显示最新版本。
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.moriafly/salt-ui)](https://search.maven.org/search?q=g:io.github.moriafly)
 
-Then add dependency in your project:
+然后在项目中添加依赖项：
 
 ```kotlin
 // Replace <TAG> with the latest version
-// e.g. implementation("io.github.moriafly:salt-ui:2.4.0-alpha03")
+// e.g. implementation("io.github.moriafly:salt-ui:2.6.0-alpha03")
 implementation("io.github.moriafly:salt-ui:<TAG>")
 ```
 
-Simple start:
+简易开始:
 
 ```kotlin
 @Composable
@@ -37,15 +37,13 @@ fun App() {
 }
 ```
 
-See demo: [composeApp](https://github.com/Moriafly/SaltUI/tree/main/composeApp).
+DEMO：[composeApp](https://github.com/Moriafly/SaltUI/tree/main/composeApp)
 
-## Docs
+## 先决条件
 
-Once you've added the Salt UI dependency and synced your project, you're ready to use Salt UI.
+添加 Salt UI 依赖项并同步项目后，您就可以使用 Salt UI。
 
-### Prerequisites
-
-If you're using ​Compose Material or ​Material3, note that ​Salt UI is not a full replacement. However, if you need to use them together, you may need to replace some foundational components:
+如果您使用的是 Compose Material 或 Material3，请注意 Salt UI 不是完全替代品。但是，如果您需要将它们一起使用，则可能需要更换一些基础组件：
 
 ```kotlin
 import androidx.compose.material.Text // [!code --]
@@ -59,11 +57,11 @@ import androidx.compose.material3.Icon // [!code --]
 import com.moriafly.salt.ui.Icon // [!code ++]
 ```
 
-### Theme
+## 主题
 
-Theme is a key part of Salt UI. You can apply `SaltTheme` where needed, similar to how you'd use `MaterialTheme`.
+主题是 Salt UI 的关键部分。您可以根据需要应用 `SaltTheme`，类似于使用 `MaterialTheme` 的方式。
 
-But it also differs in many ways. Below is the function declaration for `SaltTheme`:
+但它在很多方面也有所不同。以下是 `SaltTheme` 的函数声明：
 
 ```kotlin
 @Composable
@@ -80,9 +78,9 @@ fun SaltTheme(
 )
 ```
 
-### saltConfigs
+### SaltConfigs
 
-In `SaltTheme`, the `configs` parameter is required, like this:
+在 `SaltTheme` 中， 需要 `configs` 参数，如下所示：
 
 ```kotlin
 SaltTheme(
@@ -93,7 +91,7 @@ SaltTheme(
 )
 ```
 
-The `isDarkTheme` parameter specifies whether dark mode is enabled. Therefore, other parts of your code can check `SaltTheme.configs.isDarkTheme` to determine if dark mode is active.
+`isDarkTheme` 参数指定是否启用深色模式。因此，代码的其他部分可以检查 `SaltTheme.configs.isDarkTheme` 以确定暗模式是否处于活动状态。
 
 ```kotlin
 if (SaltTheme.config.isDarkTheme) {
@@ -101,9 +99,321 @@ if (SaltTheme.config.isDarkTheme) {
 }
 ```
 
-The `indication` handles press feedback. By default, Salt UI uses its built-in `AlphaIndication` effect. To use Android's Material ripple effect instead, specify `ripple()`.
+`indication` 处理反馈。默认情况下，Salt UI 使用其内置的 `AlphaIndication` 效果。要改用 Android 的材质涟漪效果，请指定 `ripple()`。
 
-### dynamicColors
+### SaltDynamicColors
 
+`SaltDynamicColors` 是 Salt UI 里面用来配置颜色的，不同于 Material，Salt UI 需要同时指定一种颜色的 `light` 和 `dark` 配置。
 
-### 
+```kotlin
+SaltDynamicColors(
+    light = // SaltColors,
+    dark = // SaltColors
+)
+```
+
+#### SaltColors
+
+Salt UI 的颜色配置：
+
+| 属性 | 用途 |
+|:-- |:-- |
+| highlight | 主题色 |
+| text | 主要文本和图标颜色 |
+| subText | 次要文本颜色 |
+| background | 背景色（简易不所以透明度） |
+| subBackground | 次要背景色 |
+| popup | 弹出界面背景色 |
+| stroke | 边缘线条颜色 |
+| onHighlight | 位于 highlight 上方的前景色 |
+
+其中 Salt UI 使用分层设计，类似 `RoundedColumn` 中使用 `subBackground` 作为内容背景色。
+
+### SaltTextStyles
+
+Salt UI 的文本样式（不含颜色）配置：
+
+| 属性 | 用途 |
+|:-- |:-- |
+| main | 主文本 |
+| sub | 次要文本 |
+| paragraph | 大型段落 |
+
+### SaltDimens
+
+Salt UI 的一些长度、大小定义：
+
+| 属性 | 用途 |
+|:-- |:-- |
+| item | `元项` 的最小高度 |
+| itemIcon | `元项` 图标的最小高度 |
+| ~~corner~~ | （已废弃）圆角大小 |
+| ~~dialogCorner~~ | （已废弃）对话框圆角大小 |
+| padding | 主要边距 |
+| subPadding | 次要边距 |
+
+```kotlin
+ * Dimens for Salt UI.
+ *
+ *   ╭──────────────────────────────────────────────────╮
+ *   │ ------------------[padding] * 0.5f               │
+ *   │           ╭──────────────────────────╮           │
+ *   │           │ ------[subPadding]       │           │
+ *   │ [padding] │ [padding] Text [padding] │ [padding] │
+ *   │           │ ------[subPadding]       │           │
+ *   │           ╰──────────────────────────╯           │
+ *   │ ------------------[padding] * 0.5f               │
+ *   │ ------------------[padding] * 0.5f               │
+ *   │           ╭──────────────────────────╮           │
+ *   │           │ ------[subPadding]       │           │
+ *   │ [padding] │ [padding] Text [padding] │ [padding] │
+ *   │           │ ------[subPadding]       │           │
+ *   │           ╰──────────────────────────╯           │
+ *   │ ------------------[padding] * 0.5f               │
+ *   ╰──────────────────────────────────────────────────╯
+ */
+```
+
+### SaltShape
+
+Salt UI 的形状配置：
+
+| 属性 | 用途 |
+|:-- |:-- |
+| small | 小 |
+| medium | 中 |
+| large | 大 |
+
+## Item（元项）
+
+Item（元项）是 Salt UI 中的重要概念，它多用于构建 UI 设置、配置界面。
+
+以设置界面为例，它是一个滚动的页面，其实就由各种 `元项` 构成，这些 `元项` 又多放在同一个 `RoundedColumn` 聚类。类似：
+
+```kotlin
+// ItemOuter
+RoundedColumn {
+    // Item
+}
+```
+
+其中以 `Item` 开头的组件多用于 `RoundedColumn` 内部，以 `ItemOuter` 开头的组件多用于外部。
+
+### ItemArrow
+
+`Item` 的右侧箭头，带样式，一般用不到，除了自定义 `Item`。
+
+### ItemTip
+
+提示文本。
+
+### Item
+
+基础 `Item`，用于跳转页面或者打开网页。
+
+### ItemSwitcher
+
+开关。
+
+### ItemPopupArrow
+
+弹出菜单箭头，一般不用。
+
+### ItemCheck
+
+多选。
+
+### ItemValue
+
+Key Value 属性文本，标题 - 内容文本。
+
+### ItemEdit
+
+编辑框。
+
+### ItemEditPassword
+
+密码编辑框。
+
+### ItemSlider
+
+滑块。
+
+### ItemButton
+
+按钮。
+
+### ItemSpacer
+
+边距。
+
+### ItemContainer
+
+容器，一般不用，用 `innerPadding` 代替。
+
+### ItemDivider
+
+分割。
+
+### ItemInfo
+
+带图标和颜色文本的提示。
+
+### ItemDropdown
+
+弹出选择菜单。
+
+### ItemOuterTitle
+
+外部标题，用于给聚类 `RoundedColumn` 块的标题。
+
+### ItemOuterTip
+
+外部提示文本。
+
+### ItemOuterLargeTitle
+
+外部大型标题，多用于移动平台。
+
+### ItemOuterEdit
+
+外部编辑框。
+
+### ItemOuterTextButton
+
+外部文本按钮。
+
+### ItemOuterSpacer
+
+外部边距。
+
+### ItemOuterHalfSpacer
+
+外部半高边距。
+
+## Bar
+
+### TitleBar
+
+标题栏。
+
+### BottomBar
+
+底部栏。
+
+#### BottomBarItem
+
+底部栏项。
+
+## Button
+
+### BasicButton
+
+基础按钮。
+
+## Icon
+
+图标。
+
+### Icons
+
+Salt UI 自带图标资源，一般不用。
+
+## JustifiedRow
+
+自适应两端对齐布局，可设定内部间距。
+
+## Modifier
+
+### Modifier.thenIf
+
+### Modifier.onPointerEventCompat
+
+## Padding
+
+## RoundedColumn
+
+构建聚类 `Item` 块，也可用于其他界面，此组件用处多。
+
+## SaltPalette
+
+一些颜色配置。
+
+## Slider
+
+滑块。
+
+## Surface
+
+表面。
+
+## Switcher
+
+开关。
+
+## Text
+
+文本。
+
+## UnstableSaltUiApi
+
+指示不稳定的 Salt UI 方法等。
+
+## WindowInsets
+
+### safeMain
+
+### safeMainIgnoringVisibility
+
+### safeMainCompat
+
+## Popup
+
+### PopupMenu
+
+### PopupMenuItem
+
+### PopupState
+
+## 其他
+
+### AlphaIndication
+
+### Clickable
+
+### Edge
+
+## 特定 Android 平台
+
+### BottomSheetDialog
+
+### EdgeToEdge
+
+### RomUtil
+
+### ScreenUtil
+
+### ThreadUtil
+
+### WindowUtil
+
+设置 Android `Window` 状态栏和导航栏前景色：
+
+```kotlin
+// 设置状态栏前景色白色
+WindowUtil.setStatusBarForegroundColor(window, BarColor.White)
+// 设置导航栏前景色黑色
+WindowUtil.setNavigationBarForegroundColor(window, BarColor.Black)
+```
+
+## 特定 Desktop 平台
+
+### Windows
+
+#### HWND
+
+### SkiaLayer
+
+### SaltWindow
+
+### SaltDialogWindow
