@@ -389,11 +389,25 @@ Salt UI 自带图标资源，一般不用。
 
 ### EdgeToEdge
 
+### WebView
+
+详见 Accompanist 的 WebView 实现，Salt UI 对部分代码和参数进行了修改。
+
 ### RomUtil
 
 ### ScreenUtil
 
 ### ThreadUtil
+
+#### runOnMainThread
+
+顶层函数，用于将内部代码运行在主线程：
+
+```kotlin
+runOnMainThread {
+    // ...
+}
+```
 
 ### WindowUtil
 
