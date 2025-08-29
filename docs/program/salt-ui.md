@@ -355,6 +355,22 @@ Salt UI 自带图标资源，一般不用。
 
 文本。
 
+## BottomSheetScaffold
+
+复刻自 Material 中的 BottomSheetScaffold，Salt UI 移除了一些配置并修复了一些 Bug，简易使用方法：
+
+```kotlin
+BottomSheetScaffold(
+    sheetContent = {
+        // Sheet
+    }
+} {
+    // Content
+}
+```
+
+其中 Salt UI 开放了 `nestedScrollConnection` 参数以控制 Sheet 内容的嵌套滚动（咨询过谷歌工程师，推荐这种做法）。
+
 ## UnstableSaltUiApi
 
 指示不稳定的 Salt UI 方法等。
