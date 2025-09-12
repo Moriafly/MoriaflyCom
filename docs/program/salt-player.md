@@ -16,7 +16,6 @@ hero:
 - 下载
   - Official 渠道（境内用户推荐）：OPPO（一加、realme）、荣耀、小米和华为用户可在对应的应用商店下载，搜索“Salt Player”。 
   - Google Play 渠道（境外用户推荐）：[Play 商店](https://play.google.com/store/apps/details?id=com.salt.music)
-  - Moriafly 渠道：[酷安](https://www.coolapk.com/apk/com.salt.music)
 
 - [问题反馈](/program/salt-player-issue)
 
