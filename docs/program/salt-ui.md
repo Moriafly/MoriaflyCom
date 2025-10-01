@@ -129,6 +129,26 @@ Salt UI 的颜色配置：
 
 其中 Salt UI 使用分层设计，类似 `RoundedColumn` 中使用 `subBackground` 作为内容背景色。
 
+#### # Tips
+如果您想要从您项目自有的 Material ColorScheme 或者其他颜色配色方案迁移到 `SaltColors` 并在项目中统一使用，可以使用下面的函数：
+
+```kotlin
+// 扩展函数：将Material3 ColorScheme转换为SaltColors
+@Composable
+private fun ColorScheme.toSaltColors(): SaltColors = SaltColors(
+    highlight = this.primary, // 使用primary作为高亮色
+    text = this.onBackground, // 主要文字颜色
+    subText = this.onSurfaceVariant, // 次要文字颜色
+    background = this.background, // 主背景色
+    subBackground = this.surface, // 次要背景色
+    popup = this.surfaceContainer, // 弹窗背景色
+    stroke = this.outline, // 描边颜色
+    onHighlight = this.primary // 高亮色上的文字颜色
+)
+```
+其中的配色您可以自行修改调整以符合您的产品主要配色方案需求。使用时只需要在您的项目的Theme中将您的配色方案带上`.toSaltColors()`即可转换为SaltColors方案。
+
+
 ### SaltTextStyles
 
 Salt UI 的文本样式（不含颜色）配置：
