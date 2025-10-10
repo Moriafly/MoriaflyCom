@@ -174,7 +174,8 @@ Salt UI 的一些长度、大小定义：
 | padding | 主要边距 |
 | subPadding | 次要边距 |
 
-```kotlin
+```
+/**
  * Dimens for Salt UI.
  *
  *   ╭──────────────────────────────────────────────────╮
@@ -422,6 +423,10 @@ BottomSheetScaffold(
 ### Edge
 
 ## 特定 Android 平台
+
+### SaltApplication
+
+Salt UI `2.8.0-alpha01` 版本新增，推荐使用 Salt UI 时使用继承自 SaltApplication，包含一些特殊处理。
 
 ### BottomSheetDialog
 
