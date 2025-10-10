@@ -121,7 +121,7 @@ Salt UI 的颜色配置：
 | highlight | 主题色 |
 | text | 主要文本和图标颜色 |
 | subText | 次要文本颜色 |
-| background | 背景色（简易不所以透明度） |
+| background | 背景色（建议不带透明度） |
 | subBackground | 次要背景色 |
 | popup | 弹出界面背景色 |
 | stroke | 边缘线条颜色 |
