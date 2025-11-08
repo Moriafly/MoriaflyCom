@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "SPW"
-  text: "Salt Player®\nfor Windows™"
-  tagline: 数十万用户选择的本地音乐播放器品牌
+  name: "Salt Player®"
+  text: "高山仰止，律动非凡"
+  tagline: 百万用户选择的本地音乐播放器品牌
   image:
     src: /spa.png
 
@@ -17,13 +17,13 @@ features:
     link: /program/spw/doc/channel-ms
   - icon:
       src: /ic-steam.png
-    title: 从 Steam 下载
-    details: 将 SPW 加入您的 Steam 库中
-    link: /program/spw/doc/channel-steam
+    title: 加入 Steam 愿望单
+    details: 尽快发布
+    link: https://store.steampowered.com/app/3009140/Salt_Player_for_Windows
   - icon:
       src: /ic-update.png
     title: 更新日志
-    details: 2025 年 10 月 14 日发布 1.7.11 版本
+    details: 2025 年 7 月 8 日发布 1.4.13 版本
     link: /program/spw/changelog
   - icon:
       src: /ic-document.png

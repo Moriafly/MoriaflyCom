@@ -50,7 +50,7 @@ features:
       src: /salt-note.png
     title: 椒盐笔记 Salt Note
     details: 椒盐笔记是一款纯文本 + Markdown 的笔记软件，也可以用于便签、日记、文稿撰写等
-    link: https://moriafly.xyz/HiMoriafly/docs/salt-note/
+    link: /program/salt-note
   - icon: 
       src: /hearusy-spectrum.png
     title: Hearusy Spectrum
