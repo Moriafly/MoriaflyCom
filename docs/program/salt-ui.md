@@ -428,9 +428,37 @@ BottomSheetScaffold(
 
 Salt UI `2.8.0-alpha01` 版本新增，推荐使用 Salt UI 时使用继承自 SaltApplication，包含一些特殊处理。
 
+```kotlin
+class App: SaltApplication() {
+}
+```
+
 ### BottomSheetDialog
 
 ### EdgeToEdge
+
+Salt UI 实现 Activity 边到边：
+
+```kotlin
+
+import com.moriafly.salt.ui.ext.edgeToEdge
+
+// ...
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    edgeToEdge()
+    // Others before super.onCreate
+    super.onCreate(savedInstanceState)
+}
+```
+
+Sample of themes.xml:
+
+```xml
+<style name="Theme.SaltUI" parent="@android:style/Theme.Holo">
+    <item name="android:windowBackground">@null</item>
+</style>
+```
 
 ### WebView
 
