@@ -4,6 +4,12 @@ SPW 支持选择 DirectX 或 OpenGL 加速渲染界面。
 
 对于 Windows 10 默认使用 OpenGL 渲染，而对于 Windows 11 默认使用 DirectX 渲染。
 
+## [DXGI 兼容模式](dxgi-compat-mode)
+
+## 垂直同步
+
+**禁用**垂直同步提高帧率约 2~4 倍，但会大量使用 GPU 资源，默认开启。
+
 ## OpenGL 兼容性问题
 
 在 Windows 11 上启用 OpenGL 并同时选择了亚克力、云母或云母 Alt 效果可能会导致窗口背景问题。
