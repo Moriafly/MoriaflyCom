@@ -23,7 +23,7 @@ features:
   - icon:
       src: /ic-update.png
     title: 更新日志
-    details: 2026 年 2 月 3 日发布 1.11.0 版本
+    details: 2026 年 2 月 3 日发布 1.11.1 版本
     link: /program/spw/changelog
   - icon:
       src: /ic-document.png
