@@ -16,6 +16,22 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/program/salt-ui/': [
+        {
+          text: 'Salt UI',
+          items: [
+            { text: '概述', link: '/program/salt-ui/' },
+            {
+              text: '核心',
+              link: '/program/salt-ui/core',
+              items: [
+                { text: 'OS', link: '/program/salt-ui/core#os' },
+                { text: 'UnstableSaltCoreApi', link: '/program/salt-ui/core#unstablesaltcoreapi' },
+              ]
+            },
+          ]
+        }
+      ],
       '/program/spw/': [
         {
           text: 'SPW',
