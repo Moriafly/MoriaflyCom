@@ -11,30 +11,25 @@ hero:
 
 features:
   - icon:
-      src: /spa.png
+      src: https://cdn.simpleicons.org/android/3DDC84
     title: Android
     details: 安卓平台，百万用户的选择，支持谷歌、OPPO、小米、华为、荣耀等应用商店
     link: /saltplayer/android
   - icon:
-      src: /microsoft-store.svg
+      src: https://cdn.simpleicons.org/windows/0078D4
     title: Windows
-    details: 从 Microsoft Store 下载，MSIX 包软件，Windows 上的无缝体验
-    link: /saltplayer/windows
+    details: 从 Microsoft Store 或 Steam 下载，Windows 上的无缝体验
+    link: /program/spw
   - icon:
-      src: /ic-steam.png
-    title: Windows (Steam)
-    details: 将 SPW 加入您的 Steam 库中
-    link: https://store.steampowered.com/app/3009140/Salt_Player_for_Windows
-  - icon:
-      src: /ic-document.png
+      src: https://cdn.simpleicons.org/apple/000000
     title: macOS
     details: 即将支持 macOS 平台
   - icon:
-      src: /ic-document.png
+      src: https://cdn.simpleicons.org/linux/FCC624
     title: Linux
     details: 即将支持 Linux 平台
   - icon:
-      src: /ic-update.png
+      src: https://cdn.simpleicons.org/huawei/FF0000
     title: HarmonyOS
     details: 原生鸿蒙应用，即将推出
 ---
