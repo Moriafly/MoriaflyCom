@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Salt Player®"
-  text: "高山仰止，律动非凡"
-  tagline: 百万用户选择的本地音乐播放器品牌
+  text: 百万用户选择的本地音乐播放器品牌
+  tagline: Android · Windows · HarmonyOS
   image:
     src: /spa.png
 
@@ -23,7 +23,8 @@ features:
   - icon:
       src: https://cdn.simpleicons.org/huawei/FF0000
     title: HarmonyOS
-    details: 原生鸿蒙应用，即将推出
+    details: 原生鸿蒙应用，即将内测
+    link: /saltplayer/harmonyos
   - icon:
       src: https://cdn.simpleicons.org/apple/000000
     title: macOS
@@ -33,17 +34,3 @@ features:
     title: Linux
     details: 即将支持 Linux 平台
 ---
-
-## 跨平台统一体验
-
-SPM (Salt Player Multi-platform) 是新一代跨平台音乐播放器，基于 Salt UI 和 Compose Multiplatform 构建，致力于在各平台提供一致且优质的本地音乐播放体验。
-
-### 平台支持状态
-
-| 平台 | 状态 | 说明 |
-|:--|:--|:--|
-| Android | ✅ 已发布 | 完整功能支持，各大应用商店可下载 |
-| Windows | ✅ 已发布 | Microsoft Store 和 Steam 双渠道 |
-| HarmonyOS | 🚧 开发中 | 原生鸿蒙应用开发中 |
-| macOS | 🚧 开发中 | 即将推出 |
-| Linux | 🚧 开发中 | 即将推出 |
