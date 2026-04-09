@@ -21,6 +21,10 @@ features:
     details: 从 Microsoft Store 或 Steam 下载，Windows 上的无缝体验
     link: /program/spw
   - icon:
+      src: https://cdn.simpleicons.org/huawei/FF0000
+    title: HarmonyOS
+    details: 原生鸿蒙应用，即将推出
+  - icon:
       src: https://cdn.simpleicons.org/apple/000000
     title: macOS
     details: 即将支持 macOS 平台
@@ -28,10 +32,6 @@ features:
       src: https://cdn.simpleicons.org/linux/FCC624
     title: Linux
     details: 即将支持 Linux 平台
-  - icon:
-      src: https://cdn.simpleicons.org/huawei/FF0000
-    title: HarmonyOS
-    details: 原生鸿蒙应用，即将推出
 ---
 
 ## 跨平台统一体验
@@ -44,6 +44,6 @@ SPM (Salt Player Multi-platform) 是新一代跨平台音乐播放器，基于 S
 |:--|:--|:--|
 | Android | ✅ 已发布 | 完整功能支持，各大应用商店可下载 |
 | Windows | ✅ 已发布 | Microsoft Store 和 Steam 双渠道 |
+| HarmonyOS | 🚧 开发中 | 原生鸿蒙应用开发中 |
 | macOS | 🚧 开发中 | 即将推出 |
 | Linux | 🚧 开发中 | 即将推出 |
-| HarmonyOS | 🚧 开发中 | 原生鸿蒙应用开发中 |
