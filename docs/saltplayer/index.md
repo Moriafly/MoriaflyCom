@@ -14,12 +14,12 @@ features:
       src: /spa.png
     title: Android
     details: 安卓平台，百万用户的选择，支持谷歌、OPPO、小米、华为、荣耀等应用商店
-    link: /program/salt-player
+    link: /saltplayer/android
   - icon:
       src: /microsoft-store.svg
     title: Windows
     details: 从 Microsoft Store 下载，MSIX 包软件，Windows 上的无缝体验
-    link: /program/spw/doc/channel-ms
+    link: /saltplayer/windows
   - icon:
       src: /ic-steam.png
     title: Windows (Steam)
