@@ -18,6 +18,11 @@ hero:
 features:
   - icon: 
       src: /spa.png
+    title: 椒盐音乐 Salt Player
+    details: 数十万用户选择的本地音乐播放器品牌
+    link: /saltplayer
+  - icon: 
+      src: /spa.png
     title: <img src="https://img.shields.io/badge/HOT-red"> Salt Player for Windows
     details: 椒盐音乐 PC 版，数十万用户选择的本地音乐播放器品牌
     link: /program/spw
