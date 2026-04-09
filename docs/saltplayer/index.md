@@ -16,7 +16,7 @@ features:
     details: 安卓平台，百万用户的选择，支持谷歌、OPPO、小米、华为、荣耀等应用商店
     link: /saltplayer/android
   - icon:
-      src: /microsoft-store.svg
+      src: /ic-windows.svg
     title: Windows
     details: 从 Microsoft Store 或 Steam 下载，Windows 上的无缝体验
     link: /program/spw
