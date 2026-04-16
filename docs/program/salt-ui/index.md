@@ -493,6 +493,8 @@ WindowUtil.setNavigationBarForegroundColor(window, BarColor.Black)
 
 ## 特定 Desktop 平台
 
+详见 [Desktop 文档](/program/salt-ui/desktop)。
+
 ### Windows
 
 #### HWND

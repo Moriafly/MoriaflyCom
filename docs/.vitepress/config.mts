@@ -29,6 +29,15 @@ export default defineConfig({
                 { text: 'UnstableSaltCoreApi', link: '/program/salt-ui/core#unstablesaltcoreapi' },
               ]
             },
+            {
+              text: 'Desktop',
+              link: '/program/salt-ui/desktop',
+              items: [
+                { text: 'SaltWindow', link: '/program/salt-ui/desktop#saltwindow' },
+                { text: 'SaltWindowExceptionHandler', link: '/program/salt-ui/desktop#saltwindowexceptionhandler' },
+                { text: 'HWND', link: '/program/salt-ui/desktop#hwnd' },
+              ]
+            },
           ]
         }
       ],
