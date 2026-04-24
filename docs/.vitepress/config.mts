@@ -70,6 +70,7 @@ export default defineConfig({
                 },
                 { text: '音轨项', link: '/program/spw/doc/track-item' },
                 { text: 'SPW 音频引擎', link: '/program/spw/doc/audio-engine' },
+                { text: '音频格式支持', link: '/program/spw/doc/audio-format-support' },
                 { text: '无间隙播放', link: '/program/spw/doc/gapless-playback' },
                 { text: '创意工坊', link: '/program/spw/doc/workshop' },
                 { text: '渲染', link: '/program/spw/doc/render' },
