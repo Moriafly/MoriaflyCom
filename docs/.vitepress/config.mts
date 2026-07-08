@@ -16,6 +16,15 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/saltplayer/android/': [
+        {
+          text: 'Salt Player Android',
+          items: [
+            { text: '概述', link: '/saltplayer/android/' },
+            { text: 'USB 独占模式', link: '/saltplayer/android/usb-exclusive' },
+          ]
+        }
+      ],
       '/program/salt-ui/': [
         {
           text: 'Salt UI',

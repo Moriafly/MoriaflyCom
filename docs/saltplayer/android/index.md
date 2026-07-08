@@ -36,3 +36,7 @@ hero:
 - 多种音效调节
 - 精美播放界面
 - 智能音乐库管理
+
+## 高级音频
+
+- [USB 独占模式](/saltplayer/android/usb-exclusive) - 绕过 Android 系统音频处理，直连 USB DAC 输出，获得更高品质的听音体验
