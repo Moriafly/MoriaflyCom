@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.16.0 2026/8/6
+
+- https://mp.weixin.qq.com/s/oBwfotlRiXu5TwMuouoKHg
+
 ## 1.15.2 2026/7/8
 
 - 新增键盘快捷键设置，支持软件内 / 全局分别设置等多种功能
