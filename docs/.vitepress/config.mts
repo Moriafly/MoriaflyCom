@@ -39,6 +39,17 @@ export default defineConfig({
               ]
             },
             {
+              text: '构建页面',
+              link: '/program/salt-ui/screen',
+              items: [
+                { text: 'BasicScreen', link: '/program/salt-ui/screen#basicscreen' },
+                { text: 'TitleBarButton', link: '/program/salt-ui/screen#titlebarbutton' },
+                { text: 'ScreenCard', link: '/program/salt-ui/screen#screencard' },
+                { text: 'Cupertino 过渡滚动', link: '/program/salt-ui/screen#cupertino-scroll' },
+                { text: '综合示例', link: '/program/salt-ui/screen#example' },
+              ]
+            },
+            {
               text: 'Desktop',
               link: '/program/salt-ui/desktop',
               items: [
