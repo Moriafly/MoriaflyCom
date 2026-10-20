@@ -115,12 +115,17 @@ fun main() = application {
 | 一个 `SaltWindow` 不需要自定义标题栏命中区域 | 可以不声明 |
 | 一个 `SaltWindow` 或 `SaltDialogWindow` 需要该区域 | 声明一个 |
 | 同一窗口的不同 `Box`、页面或布局分支各声明一个 | 不允许；这些声明共用同一个窗口的注册名额 |
+| 页面过渡期间，新旧动画分支各声明一个 | 不允许；退出动画未完成时，旧分支仍占用注册名额 |
 | 父窗口和子 `SaltWindow` / `SaltDialogWindow` | 各自独立，每个窗口都可以声明一个 |
-| Compose `Popup` 内部 | 不应声明；Popup 继承父组合的注册，不会建立 Salt UI 窗口作用域 |
+| Compose `Popup`、`Dialog`、`DialogWindow` 或普通 `Window` 的内容 | 不应声明；这些子窗口和覆盖层不会建立 Salt UI 窗口作用域 |
 
 重复注册会抛出 `IllegalStateException`。普通重组不会重复占用名额；组件离开组合后会释放注册并清理悬停状态，因此可以通过条件分支移除、替换或重新添加。建议在窗口根布局中统一配置，页面切换时只替换页面内容。
 
-Popup 是否由独立的原生窗口承载，取决于 Compose 的 layer 配置；即便使用独立原生窗口，它也不会因此获得独立的 Salt UI 注册。需要有自身标题栏的子窗口时，使用 `SaltWindow` 或 `SaltDialogWindow`。
+`AnimatedContent`、`Crossfade` 和相互重叠的 `AnimatedVisibility` 会在过渡期间同时保留退出与进入的内容。如果两个分支各自包含 `CaptionBarHitTest`，仍会触发重复注册检查。将 `CaptionBarHitTest` 提升到动画外的窗口根布局，只对主内容或标题栏控件执行动画。
+
+只有 `SaltWindow` 和 `SaltDialogWindow` 会建立独立的注册作用域。Compose `Popup`、`Dialog`、`DialogWindow` 和普通 `Window` 的子窗口或覆盖层组合会继承父组合的注册，不应在其内容中声明 `CaptionBarHitTest`。这不影响普通布局中的子组合：只要属于同一个 Salt UI 窗口，就共同遵守最多一个的约束。
+
+Popup 是否由独立的原生窗口承载，取决于 Compose 的 layer 配置；即便创建了独立原生窗口，也不会因此获得 Salt UI 的窗口处理能力和独立注册。需要有自身标题栏的子窗口时，使用 `SaltWindow` 或 `SaltDialogWindow`。
 
 ::: info 版本说明
 重复注册的自动检查由 [SaltUI #63](https://github.com/Moriafly/SaltUI/pull/63) 引入，请确认使用的版本包含该改动。旧版本即使没有主动抛出异常，也应遵守每个窗口最多一个的用法。
