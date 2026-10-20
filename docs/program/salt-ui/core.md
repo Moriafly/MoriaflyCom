@@ -1,8 +1,12 @@
-# Core
+# Core 模块
 
 Salt Core 是 Salt UI 的基础核心模块，提供了跨平台的基础工具类和 API。
 
-## OS
+```kotlin
+implementation("io.github.moriafly:salt-core:<TAG>")
+```
+
+## OS {#os}
 
 `OS` 是一个密封类（sealed class），用于表示操作系统平台及其版本信息。通过 `OS.current` 可以获取当前运行的平台。
 
@@ -162,7 +166,7 @@ fun NotificationSettings() {
 }
 ```
 
-## UnstableSaltCoreApi
+## UnstableSaltCoreApi {#unstablesaltcoreapi}
 
 ```kotlin
 @UnstableSaltCoreApi

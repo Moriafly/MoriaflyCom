@@ -31,11 +31,17 @@ export default defineConfig({
           items: [
             { text: '概述', link: '/program/salt-ui/' },
             {
-              text: '核心',
-              link: '/program/salt-ui/core',
+              text: 'UI 模块',
+              link: '/program/salt-ui/ui',
               items: [
-                { text: 'OS', link: '/program/salt-ui/core#os' },
-                { text: 'UnstableSaltCoreApi', link: '/program/salt-ui/core#unstablesaltcoreapi' },
+                { text: '主题', link: '/program/salt-ui/ui#theme' },
+                { text: 'Item（元项）', link: '/program/salt-ui/ui#item' },
+                { text: '基础组件', link: '/program/salt-ui/ui#components' },
+                { text: '弹层与对话框', link: '/program/salt-ui/ui#dialogs' },
+                { text: '材质', link: '/program/salt-ui/ui#material' },
+                { text: '手势', link: '/program/salt-ui/ui#gestures' },
+                { text: 'Lazy 布局', link: '/program/salt-ui/ui#lazy' },
+                { text: 'Android 平台', link: '/program/salt-ui/ui#android' },
               ]
             },
             {
@@ -54,8 +60,38 @@ export default defineConfig({
               link: '/program/salt-ui/desktop',
               items: [
                 { text: 'SaltWindow', link: '/program/salt-ui/desktop#saltwindow' },
+                { text: 'DesktopCaptionBar', link: '/program/salt-ui/desktop#desktopcaptionbar' },
+                { text: 'CaptionBarHitTest', link: '/program/salt-ui/desktop#captionbarhittest' },
+                { text: 'SaltDialogWindow', link: '/program/salt-ui/desktop#saltdialogwindow' },
+                { text: 'SaltWindowProperties', link: '/program/salt-ui/desktop#saltwindowproperties' },
+                { text: 'LocalSaltWindowInfo', link: '/program/salt-ui/desktop#localsaltwindowinfo' },
                 { text: 'SaltWindowExceptionHandler', link: '/program/salt-ui/desktop#saltwindowexceptionhandler' },
                 { text: 'HWND', link: '/program/salt-ui/desktop#hwnd' },
+              ]
+            },
+            {
+              text: 'Core 模块',
+              link: '/program/salt-ui/core',
+              items: [
+                { text: 'OS', link: '/program/salt-ui/core#os' },
+                { text: 'UnstableSaltCoreApi', link: '/program/salt-ui/core#unstablesaltcoreapi' },
+              ]
+            },
+            {
+              text: 'Navigation 模块',
+              link: '/program/salt-ui/navigation',
+              items: [
+                { text: 'SaltNavigator', link: '/program/salt-ui/navigation#saltnavigator' },
+                { text: 'rememberSaltNavigator', link: '/program/salt-ui/navigation#remembersaltnavigator' },
+              ]
+            },
+            {
+              text: 'Adaptive Window 模块',
+              link: '/program/salt-ui/adaptive-window',
+              items: [
+                { text: 'DeviceFormFactor', link: '/program/salt-ui/adaptive-window#deviceformfactor' },
+                { text: 'WindowSizeClass', link: '/program/salt-ui/adaptive-window#windowsizeclass' },
+                { text: 'currentSaltAdaptiveWindow', link: '/program/salt-ui/adaptive-window#currentsaltadaptivewindow' },
               ]
             },
           ]
