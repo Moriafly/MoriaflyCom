@@ -15,7 +15,9 @@ Salt UI 由多个模块组成，可按需引入：
 | UI | `io.github.moriafly:salt-ui` | UI 组件主体：主题、元项（Item）、弹层、手势、懒加载、页面构建等，[查看文档](/program/salt-ui/ui) |
 | Core | `io.github.moriafly:salt-core` | 跨平台基础能力（如 `OS` 平台信息），[查看文档](/program/salt-ui/core) |
 | Navigation | `io.github.moriafly:salt-ui-navigation` | 基于 Navigation 3 的双向导航栈，[查看文档](/program/salt-ui/navigation) |
-| Adaptive Window | `io.github.moriafly:salt-adaptive-window` | 设备形态与窗口宽度分级，[查看文档](/program/salt-ui/adaptive-window) |
+| Adaptive Window | `io.github.moriafly:salt-adaptive-window` | 窗口尺寸、宽度分级与设备形态，[查看文档](/program/salt-ui/adaptive-window) |
+
+Sheet 的布局、关闭方式与状态保留见 [Sheet 使用说明](/program/salt-ui/sheet)。
 
 ## 兼容性
 
