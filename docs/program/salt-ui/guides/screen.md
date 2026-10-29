@@ -1,5 +1,7 @@
 # 构建页面
 
+使用 `BasicScreen` 管理页面骨架，使用 [Item 元项](/program/salt-ui/components/items) 和 `ScreenCard` 组织内容。背景效果的接入与缓存见[材质](/program/salt-ui/foundations/material)。
+
 Salt UI 提供了一组相互配合的页面构建组件。使用 [BasicScreen](#basicscreen) 搭建页面骨架，使用 [ScreenCard](#screencard) 组织内容分区，使用 [TitleBarButton](#titlebarbutton) 放置标题栏操作，再用 [Cupertino 过渡滚动](#cupertino-scroll)为整个页面带来 iOS 风格的滚动手感。
 
 这些组件属于非稳定 API，使用时需要标注 `@OptIn(UnstableSaltUiApi::class)`。

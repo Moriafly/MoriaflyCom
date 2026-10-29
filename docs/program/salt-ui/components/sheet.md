@@ -1,5 +1,7 @@
 # Sheet 使用说明
 
+Sheet 适合承载临时任务、选择和表单。其他弹层的选择见[弹层与对话框](/program/salt-ui/components/overlays)。
+
 `Sheet` 是 SaltUI 的模态面板，通过 `visible: Boolean` 和 `onDismissRequest` 管理显隐。高度、动画、平台承载、遮罩、返回处理与退出释放由组件管理。需要等待退场完成时，可额外传入 `SheetState`。接口位于 `com.moriafly.salt.ui.sheet`，目前标记为 `@UnstableSaltUiApi`。
 
 ## 最简调用
@@ -262,26 +264,24 @@ action 保留标准 SaltUI Button 的胶囊形状，不覆盖按钮圆角。四�
 
 桌面运行 `./gradlew.bat :desktopApp:run`，从首页进入 **Sheet**。Android 使用 `androidApp` 的 debug APK；iOS 使用现有 `iosApp` 工程。
 
-页面提供四类内容：短内容动态增减、100 项播放队列、带放弃确认的草稿表单，以及水平 Pager、Slider、文本选择与普通按钮。内容、呈现方式和高度配置使用 ItemPopup 菜单选择；打开等列表操作使用 ItemButton，说明文字使用 ItemOuterTip；停靠点配置、action 按钮和普通滚动容器分别抽为私有函数，Lazy 播放队列保持独立。另有拖动、滚动优先、标题、操作区、长文案、关闭许可、忽略关闭请求和草稿保护开关。忽略关闭请求会保持面板显示，与隐藏后的状态保留无关。
+页面提供四类内容：短内容动态增减、100 项播放队列、带放弃确认的草稿表单，以及水平 Pager、Slider、文本选择与普通按钮。可以选择内容、呈现方式和高度配置，体验拖动、滚动优先、长文案、关闭权限与草稿保护。忽略关闭请求会保持面板显示，与隐藏后的状态保留无关。
 
 默认根据所属窗口宽、高选择呈现方式：宽度至少为 600 dp 且高度至少为 480 dp 时使用 Floating，其余使用 Bottom，不按手机或平板分类。判断使用扣除系统安全区与键盘 inset 之前的窗口尺寸。体验拖动可选择 **Bottom** 和 **Medium / Large**。短内容和表单内提供显示期间的关闭开关、程序关闭及退场途中重开。完整关闭后重新打开队列应回到顶部，选中曲目也应重置。
 
 **Return to a parent sheet** 示例演示临时隐藏：修改歌曲菜单的 Favorite 或 Note，选择停靠高度，并在较小高度下滚动，再进入歌曲信息。返回后恢复父菜单的可保存状态与高度；Done 结束整个流程，下次打开使用初始状态。两者切换仍完整运行各自的展开与关闭动画，没有额外的导航框架。
 
-自适应判断共用 `salt-adaptive-window` 的窗口信息，ui2 已通过 API 依赖提供该模块。`LocalSaltAdaptiveWindow.current` 自动读取当前原生窗口，应用入口和主题不需要手动添加 Provider；Sheet 通过内部宿主参数使用所属窗口的信息，不覆盖正文中的窗口 Local。旋转、分屏和 Desktop 多窗口分别跟随自己的窗口尺寸，在 Sheet 内创建的新原生窗口也自动使用自身信息；安全区与键盘仍由 Sheet 宿主负责。受控预览与兼容说明见[自适应窗口](adaptive-window.md)。
+自适应判断共用 `salt-adaptive-window` 的窗口信息，ui2 已通过 API 依赖提供该模块。`LocalSaltAdaptiveWindow.current` 自动读取当前原生窗口，应用入口和主题不需要手动添加 Provider；Sheet 通过内部宿主参数使用所属窗口的信息，不覆盖正文中的窗口 Local。旋转、分屏和 Desktop 多窗口分别跟随自己的窗口尺寸，在 Sheet 内创建的新原生窗口也自动使用自身信息；安全区与键盘仍由 Sheet 宿主负责。受控预览与兼容说明见[自适应窗口](/program/salt-ui/adaptive-window)。
 
-## 兼容与验证范围
+## 兼容性 {#兼容与验证范围}
 
 旧 `BottomSheetScaffold`、`BottomSheetDialog` 保持原接口，不需要迁移。Sheet 不依赖 SwiftUI 运行时或 commonMain 的 Material 3 组件，`SheetState` 仅用于观察呈现生命周期。
 
-`SheetProperties(dismissible = ...)` 和 `copy(dismissible = ...)` 继续统一设置关闭权限，原有位置参数构造与 `copy(displayMode, dismissible, ...)` 均保持该行为。原有 JVM 构造函数、默认参数桥、属性 getter、`copy` 与 `copy` 默认参数入口保留，已使用旧版编译的客户端直接加载新版 Desktop JAR 验证链接与统一关闭配置的行为。旧二进制的统一关闭入口不能表达混合配置：即使只执行 `copy(displayMode = ...)`，只要传入配置有任一关闭入口被禁用，返回配置的四个关闭入口都会禁用。需要读取或保留各入口不同权限的客户端应使用新的独立开关并重新编译。
+`SheetProperties(dismissible = ...)` 和 `copy(dismissible = ...)` 继续统一设置关闭权限，原有位置参数构造与 `copy(displayMode, dismissible, ...)` 均保持该行为。旧二进制的统一关闭入口不能表达混合配置：即使只执行 `copy(displayMode = ...)`，只要传入配置有任一关闭入口被禁用，返回配置的四个关闭入口都会禁用。需要读取或保留各入口不同权限的客户端应使用新的独立开关并重新编译。
 
-关闭配置已通过 Windows 原生窗口中的鼠标、键盘与触摸交互回归，覆盖独立入口禁用、动态配置、遮罩输入拦截，以及自适应与拖拽回归。Android Sample APK 和测试 APK 构建通过，Android 真机完整交互尚未完成；未验证 iOS 编译、Xcode 链接或原生 UI。构建与兼容检查不代替对应平台的运行验收。
+## 平台行为 {#审查修复}
 
-## 审查修复
+窗口、键盘、密度和字体缩放变化会更新布局，并保留动画当前位置与速度。多停靠点的拖动可以跨越多个高度，释放后的目标根据当前位置与速度方向选择。页面离开组合时会释放所属窗口的呈现占用。
 
-显隐意图与停靠点目标分别保存，窗口、键盘和内容的几何更新不能把 Hidden 目标改为展开。Density 与字体缩放变化只更新换算和布局，不重建过渡状态；几何变化时保留动画位置与速度。多停靠点快速释放按当前位置和速度方向选择目标，支持一次拖动跨越多个高度。所属窗口的呈现占用随宿主离开组合释放，不依赖可取消的下一帧等待。
+退场内容从无障碍树中移除。浅色 Bottom 面板覆盖底部导航栏时使用深色图标；侧边导航栏位于遮罩区域时使用浅色图标。浮动面板沿用所属窗口的导航栏样式。正文需要自行接管边距时，使用前文的 Inset / EdgeToEdge 配置，避免与宿主重复处理安全区。
 
-正文使用明确的 Inset / EdgeToEdge 配置，边距 getter 不再注册生命周期或修改视口。测量阶段先读取当前 inset、测量 action，再向正文提供不可变 PaddingValues；对称浮动 inset 同样延迟到布局阶段读取。退场内容从无障碍树中移除，Android 同时隐藏平台宿主的无障碍后代。浅色 Bottom 面板覆盖底部导航栏时使用深色图标；侧边导航栏位于遮罩区域时使用浅色图标。浮动面板沿用所属窗口的导航栏样式。
-
-Desktop 默认同画布后端保留退场绘制并立即释放交互；启动时设置 compose.layers.type 为 COMPONENT 或 WINDOW 的原生后端在关闭时立即移除 Popup，避免原生绘制区域继续拦截背景输入。这两种后端不保留视觉退场。iOS 保留 Popup 退场绘制、释放交互并移除退场语义。平台行为仍由用户进行 UI 验收，源码编译不能代替运行验证。
+Desktop 默认同画布后端保留退场绘制并立即释放交互；启动时设置 `compose.layers.type` 为 `COMPONENT` 或 `WINDOW` 的原生后端在关闭时立即移除 Popup，避免原生绘制区域继续拦截背景输入。这两种后端不保留视觉退场。iOS 保留 Popup 退场绘制，同时释放交互并移除退场语义。

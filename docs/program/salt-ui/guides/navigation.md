@@ -1,4 +1,6 @@
-# Navigation 模块
+# 导航
+
+<span id="navigation-模块"></span>
 
 `salt-ui-navigation` 提供基于 [Navigation 3](https://developer.android.com/develop/ui/compose/navigation3) 的导航栈管理，属于非稳定 API，使用时需要标注 `@OptIn(UnstableSaltUiApi::class)`。
 
@@ -51,7 +53,11 @@ fun rememberSaltNavigator(
 fun App() {
     val navigator = rememberSaltNavigator(
         configuration = SavedStateConfiguration {
-            polymorphic(NavKey::class) { subclass(Home::class) }
+            polymorphic(NavKey::class) {
+                subclass(Home::class)
+                subclass(Library::class)
+                subclass(Settings::class)
+            }
         },
         initRoute = Home,
         topLevelRoutes = setOf(Home, Library, Settings)

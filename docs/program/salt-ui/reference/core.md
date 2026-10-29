@@ -1,5 +1,7 @@
 # Core 模块
 
+本页按 API 查阅基础能力。UI 接入从[安装与接入](/program/salt-ui/getting-started/installation)开始；根据窗口空间调整布局见[自适应窗口](/program/salt-ui/adaptive-window)。
+
 Salt Core 是 Salt UI 的基础核心模块，提供了跨平台的基础工具类和 API。
 
 ```kotlin

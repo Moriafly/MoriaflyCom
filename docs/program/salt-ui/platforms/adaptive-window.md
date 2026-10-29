@@ -1,5 +1,7 @@
 # 自适应窗口
 
+用当前窗口尺寸决定布局，用设备形态补充平台判断。页面容器的使用见[构建页面](/program/salt-ui/screen)。
+
 `ui2` 已通过 API 依赖提供 `salt-adaptive-window`，使用 SaltUI 时不需要额外添加模块依赖。窗口信息由 Compose 的当前原生窗口自动派生，应用入口、AppTheme 和每个窗口都不需要手动写 Provider。
 
 该模块也可以单独引入，使用时需要标注 `@OptIn(UnstableSaltAdaptiveWindowApi::class)`：
@@ -92,6 +94,6 @@ ProvideSaltAdaptiveWindow(
 
 旧版双参数 `SaltAdaptiveWindow` 构造、copy 和 Local 入口保留二进制兼容。双参数创建的值使用 `DpSize.Unspecified`；Sheet 遇到这种值时使用宿主的宽、高选择呈现方式。
 
-## 验证范围
+## 平台适配 {#验证范围}
 
-本次文档依据当前实现修正为窗口宽、高策略，Android Sample APK 构建和 Desktop 示例源码编译已通过，不以旧版按设备形态编写的测试或运行记录作为运行验证结论。窗口旋转、分屏、Desktop 多窗口，以及独立原生窗口的实际呈现和输入验收由用户执行，不新增或运行 UI 测试。
+使用窗口宽、高决定布局，并分别考虑旋转、分屏和 Desktop 多窗口。创建独立原生窗口后，在新窗口内读取自己的窗口信息；系统栏和键盘安全区域继续由对应布局处理。不要把设备分类当作当前可用窗口空间。

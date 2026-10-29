@@ -1,5 +1,7 @@
 # Desktop
 
+完成[安装与接入](/program/salt-ui/getting-started/installation)后，按需配置原生窗口；跨平台的背景材质见[材质](/program/salt-ui/foundations/material)。
+
 Salt UI 为 Windows、macOS 和 Linux 提供窗口、自定义标题栏、窗口背景和缩放支持。这些 API 位于 `salt-ui` 模块的 Desktop 源集中，通常需要标注 `@OptIn(UnstableSaltUiApi::class)`。
 
 ## SaltWindow {#saltwindow}

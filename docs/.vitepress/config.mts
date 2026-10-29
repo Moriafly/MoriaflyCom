@@ -5,6 +5,15 @@ export default defineConfig({
   title: "不要糖醋放椒盐（椒盐音乐官网）",
   description: "Moriafly Official | 不要糖醋放椒盐 | 椒盐音乐 | Salt Player",
   base: '/',
+  // Organize sources by topic while preserving published page URLs and anchors.
+  rewrites: {
+    'program/salt-ui/guides/screen.md': 'program/salt-ui/screen.md',
+    'program/salt-ui/guides/navigation.md': 'program/salt-ui/navigation.md',
+    'program/salt-ui/components/sheet.md': 'program/salt-ui/sheet.md',
+    'program/salt-ui/platforms/desktop.md': 'program/salt-ui/desktop.md',
+    'program/salt-ui/platforms/adaptive-window.md': 'program/salt-ui/adaptive-window.md',
+    'program/salt-ui/reference/core.md': 'program/salt-ui/core.md',
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -27,75 +36,52 @@ export default defineConfig({
       ],
       '/program/salt-ui/': [
         {
-          text: 'Salt UI',
+          text: '开始使用',
           items: [
             { text: '概述', link: '/program/salt-ui/' },
-            {
-              text: 'UI 模块',
-              link: '/program/salt-ui/ui',
-              items: [
-                { text: '主题', link: '/program/salt-ui/ui#theme' },
-                { text: 'Item（元项）', link: '/program/salt-ui/ui#item' },
-                { text: '基础组件', link: '/program/salt-ui/ui#components' },
-                { text: '弹层与对话框', link: '/program/salt-ui/ui#dialogs' },
-                { text: '材质', link: '/program/salt-ui/ui#material' },
-                { text: '手势', link: '/program/salt-ui/ui#gestures' },
-                { text: 'Lazy 布局', link: '/program/salt-ui/ui#lazy' },
-                { text: 'Android 平台', link: '/program/salt-ui/ui#android' },
-              ]
-            },
-            {
-              text: '构建页面',
-              link: '/program/salt-ui/screen',
-              items: [
-                { text: 'BasicScreen', link: '/program/salt-ui/screen#basicscreen' },
-                { text: 'TitleBarButton', link: '/program/salt-ui/screen#titlebarbutton' },
-                { text: 'ScreenCard', link: '/program/salt-ui/screen#screencard' },
-                { text: 'Cupertino 过渡滚动', link: '/program/salt-ui/screen#cupertino-scroll' },
-                { text: '综合示例', link: '/program/salt-ui/screen#example' },
-              ]
-            },
-            {
-              text: 'Desktop',
-              link: '/program/salt-ui/desktop',
-              items: [
-                { text: 'SaltWindow', link: '/program/salt-ui/desktop#saltwindow' },
-                { text: 'DesktopCaptionBar', link: '/program/salt-ui/desktop#desktopcaptionbar' },
-                { text: 'CaptionBarHitTest', link: '/program/salt-ui/desktop#captionbarhittest' },
-                { text: 'SaltDialogWindow', link: '/program/salt-ui/desktop#saltdialogwindow' },
-                { text: 'SaltWindowProperties', link: '/program/salt-ui/desktop#saltwindowproperties' },
-                { text: 'LocalSaltWindowInfo', link: '/program/salt-ui/desktop#localsaltwindowinfo' },
-                { text: 'SaltWindowExceptionHandler', link: '/program/salt-ui/desktop#saltwindowexceptionhandler' },
-                { text: 'HWND', link: '/program/salt-ui/desktop#hwnd' },
-              ]
-            },
-            {
-              text: 'Core 模块',
-              link: '/program/salt-ui/core',
-              items: [
-                { text: 'OS', link: '/program/salt-ui/core#os' },
-                { text: 'UnstableSaltCoreApi', link: '/program/salt-ui/core#unstablesaltcoreapi' },
-              ]
-            },
-            {
-              text: 'Navigation 模块',
-              link: '/program/salt-ui/navigation',
-              items: [
-                { text: 'SaltNavigator', link: '/program/salt-ui/navigation#saltnavigator' },
-                { text: 'rememberSaltNavigator', link: '/program/salt-ui/navigation#remembersaltnavigator' },
-              ]
-            },
-            {
-              text: 'Adaptive Window 模块',
-              link: '/program/salt-ui/adaptive-window',
-              items: [
-                { text: 'DeviceFormFactor', link: '/program/salt-ui/adaptive-window#deviceformfactor' },
-                { text: 'WindowSizeClass', link: '/program/salt-ui/adaptive-window#windowsizeclass' },
-                { text: 'currentSaltAdaptiveWindow', link: '/program/salt-ui/adaptive-window#currentsaltadaptivewindow' },
-              ]
-            },
+            { text: '安装与接入', link: '/program/salt-ui/getting-started/installation' },
           ]
-        }
+        },
+        {
+          text: '设计基础',
+          items: [
+            { text: '主题', link: '/program/salt-ui/foundations/theme' },
+            { text: '材质', link: '/program/salt-ui/foundations/material' },
+          ]
+        },
+        {
+          text: '组件',
+          items: [
+            { text: '基础组件', link: '/program/salt-ui/components/primitives' },
+            { text: 'Item 元项', link: '/program/salt-ui/components/items' },
+            { text: '弹层与对话框', link: '/program/salt-ui/components/overlays' },
+            { text: 'Sheet', link: '/program/salt-ui/sheet' },
+          ]
+        },
+        {
+          text: '使用指南',
+          items: [
+            { text: '构建页面', link: '/program/salt-ui/screen' },
+            { text: '导航', link: '/program/salt-ui/navigation' },
+            { text: '滚动与列表', link: '/program/salt-ui/guides/scrolling' },
+          ]
+        },
+        {
+          text: '平台适配',
+          items: [
+            { text: 'Android', link: '/program/salt-ui/platforms/android' },
+            { text: 'Desktop', link: '/program/salt-ui/desktop' },
+            { text: '自适应窗口', link: '/program/salt-ui/adaptive-window' },
+          ]
+        },
+        {
+          text: 'API 参考',
+          items: [
+            { text: 'UI 模块索引', link: '/program/salt-ui/ui' },
+            { text: '修饰符与工具', link: '/program/salt-ui/reference/utilities' },
+            { text: 'Core 模块', link: '/program/salt-ui/core' },
+          ]
+        },
       ],
       '/program/spw/': [
         {
